@@ -1,0 +1,128 @@
+body {
+  padding: 45px 0;
+  height: 100vh;
+  font-size: 12px;
+  line-height: 12px;
+}
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #006699;
+}
+#header .left {
+  width: .45rem;
+  height: .45rem;
+}
+#header .center {
+  flex: 1;
+  text-align: center;
+  font-weight: normal;
+  color: white;
+  font-size: .14rem;
+}
+#header .right {
+  width: .45rem;
+  height: .45rem;
+  text-align: center;
+  line-height: .45rem;
+  color: white;
+}
+#main {
+  background-color: white;
+  height: 100%;
+  position: relative;
+}
+#footer {
+  height: .45rem;
+  background-color: #006699;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+}
+#footer .mui-row {
+  height: 100%;
+}
+#footer .mui-row div {
+  height: 100%;
+}
+#footer .mui-row div a {
+  height: 100%;
+  display: block;
+  text-align: center;
+  color: white;
+  padding-top: 9px;
+}
+#footer .mui-row div a p {
+  color: white;
+  margin-top: 3px;
+}
+#main #nav {
+  padding: 10px 6px 0;
+}
+#main #nav .mui-row a {
+  display: block;
+}
+#main #nav .mui-row a img {
+  width: 100%;
+  height: 100%;
+}
+#main #banner {
+  padding: 10px 6px 0;
+}
+#main #banner .left a {
+  width: 100%;
+  display: flex;
+}
+#main #banner .left a img {
+  flex: 1;
+  height: 1.26rem;
+}
+#main #banner .right a {
+  display: block;
+}
+#main #banner .right a img {
+  width: 100%;
+  height: 100%;
+}
+#main #brand {
+  padding: 10px 6px 0;
+}
+#main #brand .title a {
+  display: block;
+}
+#main #brand .title a img {
+  width: 100%;
+  height: 100%;
+}
+#main #brand .content a {
+  display: block;
+}
+#main #brand .content a img {
+  width: 100%;
+  height: 100%;
+}
+#main #sport {
+  padding: 10px 6px 0;
+}
+#main #sport .title a {
+  display: block;
+}
+#main #sport .title a img {
+  width: 100%;
+  height: 100%;
+}
+#main #sport .content a {
+  display: block;
+}
+#main #sport .content a img {
+  width: 100%;
+  height: 100%;
+}
