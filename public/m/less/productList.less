@@ -1,0 +1,69 @@
+//引入基础模板
+@import './base.less';
+
+
+#main {
+    padding: 40px 0 0 0;
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    .searchTop {
+        padding: 10px 10px 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+    }
+    .product-list{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .mui-content {
+            background-color: white;
+        }
+    }
+    .mui-card {
+        //页眉
+        .title {
+            background-color: #ccc;
+            min-height: 0;
+            a {
+                color: #666;
+                &:active {
+                    color: #666;
+                }
+                font-size: .14rem;
+            }
+            .active {
+                color: red;
+            }
+        }
+        //主体
+        .content {
+            .mui-col-xs-6 {
+                padding: .06rem ;
+                a {
+                    box-shadow: 0 0 2px #ccc;
+                    display: block;
+                    text-align: center;
+                    padding-bottom: .1rem;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    
+                    .p1 {
+                        line-height: .2rem;
+                    }
+                    .p2 {
+                        span {
+                            color: red;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

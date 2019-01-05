@@ -1,8 +1,8 @@
 body {
-  padding: 42px 0;
+  padding: .42rem 0;
   height: 100vh;
-  font-size: 12px;
-  line-height: 12px;
+  font-size: .12rem;
+  line-height: .12rem;
 }
 * {
   margin: 0;
@@ -75,11 +75,18 @@ li {
   display: block;
   text-align: center;
   color: white;
-  padding-top: 9px;
+  padding-top: .09rem;
 }
 #footer .mui-row div a p {
   color: white;
-  margin-top: 3px;
+  margin-top: .03rem;
+}
+.zhezhao {
+  width: 200px;
+  height: 200px;
+  background: url('../images/timg.gif') no-repeat;
+  position: absolute;
+  z-index: 999;
 }
 #main {
   background-color: #ccc;

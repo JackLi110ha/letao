@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--框架mui-->
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <!--个人less-->
+    <link rel="stylesheet/less" href="./less/productList.less">
+    <!--字体图标库-->
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <!--解析less的js-->
+    <script src="./lib/less/less.js"></script>
+    <!--mui 框架js-->
+    <script src="./lib/mui/js/mui.min.js"></script>
+
+    <title>上课使用 搜索页面</title>
+</head>
+
+<body>
+    <!--头部部分-->
+    <header id="header">
+        <div class="left"><a href="./category.html"><i class="fa fa-arrow-left"></i></a></div>
+        <h4 class="center">搜索中心</h4>
+        <a href="#" class=" right"></a>
+    </header>
+
+
+    <!--主体部分-->
+    <main id="main">
+        <!--搜索框-->
+        <section class="searchTop">
+            <form action="#">
+                <input type="search" class="searchResult" placeholder="请输入搜索内容">
+                <button type="button" class="mui-btn searchTo">搜索</button>
+            </form>
+        </section>
+        <div class="product-list">
+                <div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+                        <div class="mui-scroll">
+                            <!--主体-->
+                            <div class="mui-card">
+                                <!--页眉，放置标题-->
+                                <div class="mui-card-header title">
+                                    <a href="#" class="active">上架时间 <i class="fa fa-angle-down"></i> </a>
+                                    <a href="#" class="price" data-sort-type='price' data-sort='1'>价格 <i class="fa fa-angle-down"></i>
+                                    </a>
+                                    <a href="#" class="num" data-sort-type="num" data-sort='1'>销量 <i class="fa fa-angle-down"></i>
+                                    </a>
+                                    <a href="#">折扣 <i class="fa fa-angle-down"></i> </a>
+                                </div>
+                                <!--内容区-->
+                                <div class="mui-card-content content">
+                                    <div class="mui-row">
+            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </main>
+
+
+    <!--尾部部分-->
+    <footer id="footer">
+        <div class="mui-row">
+            <div class="mui-col-xs-3">
+                <a href="./index.html">
+                    <i class="fa fa-home"></i>
+                    <p>首页</p>
+                </a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a href="./category.html">
+                    <i class="fa fa-bars"></i>
+                    <p>分类</p>
+                </a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a href="./car.html">
+                    <i class="fa fa-cart-plus"></i>
+                    <p>购物车</p>
+                </a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a href="./user.html">
+                    <i class="fa fa-user"></i>
+                    <p>个人中心</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!--创建模板-->
+    <script type="text/html" id="product-tpl">
+        {{each list value}}
+            <div class="mui-col-xs-6">
+                <a href="#">
+                    <img src="{{value.pic[0].picAddr}}" alt="">
+                    <p class="p1">{{value.proName}}</p>
+                    <p class="p2">
+                        <span>￥{{value.price}}</span>
+                        <del>￥{{value.oldPrice}}</del>
+                    </p>
+                    <button type="button" class="mui-btn mui-btn-success">立即购买{{value.num}}</button>
+                </a>
+            </div>
+        {{/each}}
+    </script>
+</body>
+
+</html>
+<!--tepto-->
+<script src="./lib/zepto/zepto.min.js"></script>
+<!--模板-->
+<script src="./lib/artTemplate/template-web.js"></script>
+<!--个人js-->
+<script src="./js/rem.js"></script>
+<script src="./js/productList.js"></script>

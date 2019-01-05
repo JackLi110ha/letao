@@ -1,0 +1,6 @@
+#main .searchBottom .mui-card-header {
+  font-size: .14rem;
+}
+#main .searchBottom .mui-card-header a {
+  color: gray;
+}

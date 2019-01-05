@@ -54,6 +54,7 @@ li {
   background-color: white;
   height: 100%;
   position: relative;
+  padding: .1rem;
 }
 #footer {
   height: .45rem;
@@ -81,79 +82,77 @@ li {
   color: white;
   margin-top: .03rem;
 }
-#main {
+.searchTop form {
+  display: flex;
+}
+.searchTop form input {
+  flex: 1;
+  margin-bottom: 0;
+  text-align: left;
   background-color: white;
-  padding: 10px;
+  border-radius: .06rem 0 0 .06rem;
+  border: 1px solid #006699;
+  border-right: none;
+  font-size: .14rem;
 }
-#main .search-top {
-  display: flex;
-}
-#main .search-top input {
-  flex: 1;
-}
-#main .search-top button {
+.searchTop form button {
   width: .6rem;
-  height: .34rem;
+  border-radius: 0 .06rem .06rem 0;
+  background-color: #006699;
+  color: white;
 }
-#main #nav {
-  padding: 10px 6px 0;
+#main {
+  padding: 40px 0 0 0;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
 }
-#main #nav .mui-row a {
-  display: block;
+#main .searchTop {
+  padding: 10px 10px 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }
-#main #nav .mui-row a img {
+#main .product-list {
+  position: relative;
   width: 100%;
   height: 100%;
 }
-#main #banner {
-  padding: 10px 6px 0;
+#main .product-list .mui-content {
+  background-color: white;
 }
-#main #banner .left a {
-  width: 100%;
-  display: flex;
+#main .mui-card .title {
+  background-color: #ccc;
+  min-height: 0;
 }
-#main #banner .left a img {
-  flex: 1;
-  height: 1.26rem;
+#main .mui-card .title a {
+  color: #666;
+  font-size: .14rem;
 }
-#main #banner .right a {
+#main .mui-card .title a:active {
+  color: #666;
+}
+#main .mui-card .title .active {
+  color: red;
+}
+#main .mui-card .content .mui-col-xs-6 {
+  padding: .06rem ;
+}
+#main .mui-card .content .mui-col-xs-6 a {
+  box-shadow: 0 0 2px #ccc;
   display: block;
+  text-align: center;
+  padding-bottom: .1rem;
 }
-#main #banner .right a img {
+#main .mui-card .content .mui-col-xs-6 a img {
   width: 100%;
   height: 100%;
 }
-#main #brand {
-  padding: 10px 6px 0;
+#main .mui-card .content .mui-col-xs-6 a .p1 {
+  line-height: .2rem;
 }
-#main #brand .title a {
-  display: block;
-}
-#main #brand .title a img {
-  width: 100%;
-  height: 100%;
-}
-#main #brand .content a {
-  display: block;
-}
-#main #brand .content a img {
-  width: 100%;
-  height: 100%;
-}
-#main #sport {
-  padding: 10px 6px 0;
-}
-#main #sport .title a {
-  display: block;
-}
-#main #sport .title a img {
-  width: 100%;
-  height: 100%;
-}
-#main #sport .content a {
-  display: block;
-}
-#main #sport .content a img {
-  width: 100%;
-  height: 100%;
+#main .mui-card .content .mui-col-xs-6 a .p2 span {
+  color: red;
 }
